@@ -36,7 +36,6 @@ static NSString *YYGameStatsVerticalHeaderIden = @"YYGameStatsVerticalHeaderIden
     self.clipsToBounds = YES;
     
     _layout = [[UICollectionViewFlowLayout alloc] init];
-//    _layout.itemSize = CGSizeMake(60, 25);
     _layout.minimumLineSpacing = 0;
     _layout.minimumInteritemSpacing = 0;
     _layout.sectionInset = UIEdgeInsetsZero;
@@ -121,11 +120,10 @@ static NSString *YYGameStatsVerticalHeaderIden = @"YYGameStatsVerticalHeaderIden
 }
 
 - (void)createSubviews {
-//    _titles = @[@"时间",@"得分",@"篮板",@"助攻",@"抢断",@"盖帽",@"投篮",@"三分",@"罚球",@"前场篮板",@"后场篮板",@"失误",@"犯规"];
+    
     self.clipsToBounds = YES;
     
     _layout = [[UICollectionViewFlowLayout alloc] init];
-//    _layout.itemSize = CGSizeMake(60, 45);
     _layout.minimumLineSpacing = 0;
     _layout.minimumInteritemSpacing = 0;
     _layout.sectionInset = UIEdgeInsetsZero;
@@ -174,7 +172,7 @@ static NSString *YYGameStatsVerticalHeaderIden = @"YYGameStatsVerticalHeaderIden
         
         UILabel *label = [[UILabel alloc] init];
         label.textColor = UIColor.darkGrayColor;
-        label.font = [UIFont systemFontOfSize:12];
+        label.font = [UIFont systemFontOfSize:10];
         label.tag = 1024;
         [cell.contentView addSubview:label];
         
