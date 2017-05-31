@@ -14,6 +14,7 @@
 @property (copy, nonatomic) NSString *team_id;
 @property (copy, nonatomic) NSString *team_name_cn;
 @property (strong, nonatomic) NSArray<YYPlayerModel *> *on;
+@property (strong, nonatomic) NSArray *titles;
 
 + (instancetype)teamModelWithDict:(NSDictionary *)dict;
 

@@ -16,6 +16,7 @@
     model.team_id = dict[@"team_id"];
     model.team_name_cn = dict[@"team_name_cn"];
     model.on = [YYPlayerModel playerModelsWithArray:dict[@"on"]];
+    model.titles = @[@"时间",@"得分",@"篮板",@"助攻",@"抢断",@"盖帽",@"投篮",@"三分",@"罚球",@"前场篮板",@"后场篮板",@"失误",@"犯规"];
     
     return model;
 }
@@ -53,19 +54,19 @@
 - (void)sortStats {
     
     NSMutableArray *array = [NSMutableArray array];
-    [array addObject:self.minutes];
-    [array addObject:self.points];
-    [array addObject:self.off_def];
-    [array addObject:self.ass];
-    [array addObject:self.ste];
-    [array addObject:self.blo];
-    [array addObject:self.field];
-    [array addObject:self.three];
-    [array addObject:self.free];
-    [array addObject:self.off];
-    [array addObject:self.def];
-    [array addObject:self.turn];
-    [array addObject:self.fouls];
+    [array addObject:self.minutes ?: @""];
+    [array addObject:self.points ?: @""];
+    [array addObject:self.off_def ?: @""];
+    [array addObject:self.ass ?: @""];
+    [array addObject:self.ste ?: @""];
+    [array addObject:self.blo ?: @""];
+    [array addObject:self.field ?: @""];
+    [array addObject:self.three ?: @""];
+    [array addObject:self.free ?: @""];
+    [array addObject:self.off ?: @""];
+    [array addObject:self.def ?: @""];
+    [array addObject:self.turn ?: @""];
+    [array addObject:self.fouls ?: @""];
     
     self.statsArray = array;
 }

@@ -19,8 +19,6 @@ static NSString *YYGameStatsVerticalHeaderIden = @"YYGameStatsVerticalHeaderIden
 
 @property (strong, nonatomic) UICollectionViewFlowLayout *layout;
 
-@property (strong, nonatomic) NSArray *titles;
-
 @end
 
 @implementation YYGameStatsHorizontalHeader
@@ -36,8 +34,6 @@ static NSString *YYGameStatsVerticalHeaderIden = @"YYGameStatsVerticalHeaderIden
 
 - (void)createSubviews {
     self.clipsToBounds = YES;
-    
-    _titles = @[@"时间",@"得分",@"篮板",@"助攻",@"抢断",@"盖帽",@"投篮",@"三分",@"罚球",@"前场篮板",@"后场篮板",@"失误",@"犯规"];
     
     _layout = [[UICollectionViewFlowLayout alloc] init];
 //    _layout.itemSize = CGSizeMake(60, 25);

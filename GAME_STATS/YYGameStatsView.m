@@ -169,6 +169,7 @@ static NSString *YYGameStatsViewIden = @"YYGameStatsViewCell";
 
 - (void)setTeamModel:(YYTeamModel *)teamModel {
     _teamModel = teamModel;
+    _horizontalHeader.titles = teamModel.titles;
     _verticalHeader.teamModel = teamModel;
     _teamNameLabel.text = teamModel.team_name_cn;
     [_collectionView reloadData];

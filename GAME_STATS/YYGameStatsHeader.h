@@ -15,6 +15,8 @@
 
 @property (assign, nonatomic) CGSize itemSize;
 
+@property (strong, nonatomic) NSArray *titles;
+
 @end
 
 @interface YYGameStatsVerticalHeader : UIView
